@@ -18,7 +18,7 @@ img {
   height: auto;
 }
 
-:root {
+/* :root {
   --header-height: 4.5rem;
   --hue: 159;
   --base-color: hsl(var(--hue) 36% 57%);
@@ -28,6 +28,20 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --body-color-secondary: white;
+} */
+
+:root {
+  --header-height: 4.5rem;
+  --hue: 224;
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 90%);
+  --text-color: hsl(var(--hue) 0% 46%);
+  --text-color-light: hsl(var(--hue) 0% 98%);
+  --body-color: hsl(var(--hue), 18%, 15%);
+  --body-color-secondary: hsl(var(--hue), 10%, 12%);
 }
 
 /*================== BASE ==================*/
@@ -256,8 +270,8 @@ nav.show div.icon-menu4 {
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
-  top: -16.8%;
-  left: 16.8%;
+  top: -6.8%;
+  left: 6.8%;
   z-index: 0;
 }
 
@@ -288,7 +302,7 @@ nav.show div.icon-menu4 {
 /*================== ABOUT ==================*/
 
 #about {
-  background: white;
+  background: --body-color-secondary;
 }
 
 #about .container {
@@ -331,7 +345,7 @@ nav.show div.icon-menu4 {
 
 .card {
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
