@@ -326,22 +326,84 @@ nav.show div.icon-menu4 {
 /*================== SERVICES ==================*/
 
 .cards.grid {
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .card {
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+  transition: 0.3s;
+}
+
+.card:nth-child(1):hover {
+  border-bottom: 0.25rem solid #e34f26;
+  transition: 0.3s;
+}
+
+.card:nth-child(1):hover i {
+  color: #e34f26;
+  transition: 0.3s;
+}
+
+.card:nth-child(2):hover {
+  border-bottom: 0.25rem solid #1572b6;
+  transition: 0.3s;
+}
+
+.card:nth-child(2):hover i {
+  color: #1572b6;
+  transition: 0.3s;
+}
+
+.card:nth-child(3) .card-hover {
+  transition: 0.3s;
+}
+
+.card:nth-child(3):hover {
+  border-image: linear-gradient(to right, #f7df1e, #007acc);
+  border-image-slice: 1;
+  transition: 0.3s;
+}
+
+.card:nth-child(3):hover i {
+  color: #f7df1e;
+}
+
+.card:nth-child(3):hover i + i {
+  color: #007acc;
+}
+
+.card:nth-child(4) .card-hover {
+  transition: 0.3s;
+}
+
+.card:nth-child(4):hover {
+  border-image: linear-gradient(to right, #61dafb, #764abc);
+  border-image-slice: 1;
+  transition: 0.3s;
+}
+
+.card:nth-child(4):hover i {
+  color: #61dafb;
+}
+
+.card:nth-child(4):hover i + i {
+  color: #764abc;
 }
 
 .card i {
-  display: block;
+  display: inline-block;
   margin-bottom: 1.5rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: var(--base-color);
+  transition: 0.3s;
+}
+
+.card i + i {
+  margin-left: 1rem;
 }
 
 .card .title {
