@@ -42,25 +42,6 @@ img {
   --body-font: 'DM Sans', sans-serif;
 }
 
-/* :root {
-  --header-height: 4.5rem;
-  --hue: 224;
-  --base-color: hsl(var(--hue) 36% 56%);
-  --base-color-second: hsl(var(--hue) 36% 36%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 90%);
-  --text-color: hsl(var(--hue) 0% 76%);
-  --text-color-light: hsl(var(--hue) 0% 98%);
-  --body-color: hsl(var(--hue), 18%, 15%);
-  --body-color-secondary: hsl(var(--hue), 10%, 12%);
-  
-  
-  --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
-} */
-
 /*================== BASE ==================*/
 
 #top {
@@ -78,6 +59,23 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+}
+
+body.dark-theme {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+  --header-height: 4.5rem;
+  --hue: 224;
+  --base-color: hsl(var(--hue) 36% 56%);
+  --base-color-second: hsl(var(--hue) 36% 36%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 90%);
+  --text-color: hsl(var(--hue) 0% 76%);
+  --text-color-light: hsl(var(--hue) 0% 98%);
+  --body-color: hsl(var(--hue), 18%, 15%);
+  --body-color-secondary: hsl(var(--hue), 10%, 12%);
 }
 
 .title {
@@ -716,7 +714,13 @@ footer a:nth-child(3) i:hover {
   nav .icon-menu3 {
     display: none;
   }
+
   nav i {
+    cursor: pointer;
+
+  }
+
+  nav > i {
     display: none;
   }
 

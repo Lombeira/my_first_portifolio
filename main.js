@@ -85,15 +85,13 @@ function activateMenuAtCurrentSection() {
     const checkpointStart = checkpoint >= sectionTop;
     const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
 
-    if (checkpointStart && checkpointEnd) {
-      document
-        .querySelector(`nav ul li a[href*=${sectionId}]`)
-        .classList.add('active');
-    } else {
-      document
-        .querySelector(`nav ul li a[href*=${sectionId}]`)
-        .classList.remove('active');
-    }
+    checkpointStart && checkpointEnd
+      ? document
+          .querySelector(`nav ul li a[href*=${sectionId}]`)
+          .classList.add('active')
+      : document
+          .querySelector(`nav ul li a[href*=${sectionId}]`)
+          .classList.remove('active');
   }
 }
 
@@ -103,4 +101,10 @@ window.addEventListener('scroll', () => {
   changeHeaderWhenScroll();
   backToTop();
   activateMenuAtCurrentSection();
+});
+
+const btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function() {
+  document.body.classList.toggle("dark-theme");
 });
