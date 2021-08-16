@@ -991,7 +991,6 @@
 }
 .icon-facebook1:before {
   content: "\ebe6";
-  color: #1877f2;
 }
 .icon-faceit:before {
   content: "\ebe7";
@@ -1149,7 +1148,6 @@
 }
 .icon-git1:before {
   content: "\ec0e";
-  color: #f05032;
 }
 .icon-gitea:before {
   content: "\ec0f";
@@ -1789,7 +1787,6 @@
 }
 .icon-linkedin1:before {
   content: "\ecb3";
-  color: #0077b5;
 }
 .icon-linode:before {
   content: "\ecb4";

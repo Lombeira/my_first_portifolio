@@ -39,12 +39,12 @@
     <header id="header" class="scroll">
       <nav class="container">
         <a class="logo" href="#"
-          >Lomb<span>eira</span>. <i class="icon-brightness-contrast"></i
-        ></a>
+          >Lomb<span>eira</span>. </a>
 
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
+            <i class="icon-brightness-contrast"></i>
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">ToolBox</a></li>
@@ -53,6 +53,7 @@
           </ul>
         </div>
         <!-- menu -->
+        <i class="icon-brightness-contrast"></i>
         <div class="toggle icon-menu3"></div>
         <div class="toggle icon-menu4"></div>
       </nav>
@@ -64,7 +65,7 @@
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
-            <img width="200px" src="img/lombeira.png" alt="" />
+            <img src="img/lombeira.png" alt="" />
           </div>
           <div class="text">
             <h2 class="title">Who am i?!</h2>
@@ -76,7 +77,7 @@
               crescimento profissional na área. Sempre aberto para trocar
               experiências e ideias, ou simplesmente tomar um café! :)
             </p>
-            <a class="button" href="#">Agendar um Horário</a>
+            <a class="button" href="#contact">Entre em contato</a>
           </div>
         </div>
       </section>
@@ -127,7 +128,7 @@
         <div class="container grid">
           <header>
             <h2 class="title">ToolBox</h2>
-            <!-- <p>Caixa de ferramentas</p> -->
+            <p class="subtitle">Caixa de ferramentas</p>
           </header>
           <div class="cards grid">
             <div class="card">
@@ -146,6 +147,7 @@
                 em conformidade com o <strong>HTML5</strong>.
               </p>
             </div>
+
             <div class="card">
               <i class="icon-css31"></i>
               <h3 class="title">CSS 3</h3>
@@ -163,6 +165,7 @@
                 rotação, movimento e transição.
               </p>
             </div>
+
             <div class="card">
               <!-- <a href="https://www.javascript.com/"> -->
               <i class="icon-javascript"></i>
@@ -186,10 +189,30 @@
                 valide se seu código está funcionando corretamente.
               </p>
             </div>
+
             <div class="card">
               <i class="icon-react"></i>
               <i class="icon-redux"></i>
               <h3 class="title">React e Redux</h3>
+              <p>
+                <strong>React JS</strong> é uma biblioteca
+                <strong>JavaScript</strong> para a criação de interfaces de
+                usuário — ou <em>UI</em> ( <em>user interface</em> ). Criado em
+                2011 pelo time do <strong>Facebook</strong>, surgiu com o
+                objetivo de otimizar a atualização e a sincronização de
+                atividades simultâneas no feed de notícias da rede social, entre
+                eles chat, status, listagem de contatos e outros.
+                <strong>Redux</strong> é uma biblioteca para armazenamento de
+                estados de aplicações <strong>JavaScript</strong>, criado por
+                <em>Dan Abramov</em>. Ele nasceu através de uma implementação do
+                <strong>Flux</strong>.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="icon-git1"></i>
+              <i class="icon-github1"></i>
+              <h3 class="title">Git e Github</h3>
               <p>
                 <strong>React JS</strong> é uma biblioteca
                 <strong>JavaScript</strong> para a criação de interfaces de
@@ -290,7 +313,7 @@
               target="_blank"
               class="button"
               href="https://api.whatsapp.com/send?phone=+5521999783845&text=Olá, vim através do seu portifólio Web!"
-              ><i class="icon-whatsapp"></i>Entrar em contato</a
+              ><i class="icon-whatsapp"></i>Manda um zap</a
             >
           </div>
           <div class="links">
@@ -302,8 +325,29 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <footer></footer>
+      <div class="divider-1"></div>
+    </main>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Lomb<span>eira</span>. </a>
+          <p>©2021 Criado por mim!</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="social">
+          <a target="_blank" href="https://www.facebook.com/Lomenha">
+            <i class="icon-facebook1"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/glaucolomenha/">
+            <i class="icon-linkedin1"></i>
+          </a>
+          <a target="_blank" href="https://github.com/Lombeira">
+            <i class="icon-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a href="#home" class="back-to-top"><i class="icon-circle-up"></i></a>
   </body>
 </html>
