@@ -9,6 +9,7 @@ for (const element of toggle) {
 }
 
 // quando clicar em um item do menubar, esconder o menu
+
 const links = document.querySelectorAll('nav ul li a');
 for (const link of links) {
   link.addEventListener('click', () => {
@@ -27,8 +28,9 @@ function changeHeaderWhenScroll() {
     : header.classList.remove('scroll');
 }
 
-const backToTopButton = document.querySelector('.back-to-top');
 // Botão voltar para o topo
+
+const backToTopButton = document.querySelector('.back-to-top');
 function backToTop() {
   window.scrollY >= 1300
     ? backToTopButton.classList.add('show')
@@ -74,6 +76,7 @@ scrollReveal.reveal(
 );
 
 // Menu ativo conforme a seção visível na página
+
 const sections = document.querySelectorAll('main section[id]');
 
 function activateMenuAtCurrentSection() {
@@ -103,8 +106,25 @@ window.addEventListener('scroll', () => {
   activateMenuAtCurrentSection();
 });
 
-const btn = document.querySelector(".btn-toggle");
+// Ativa o Dark Mode
 
-btn.addEventListener("click", function() {
-  document.body.classList.toggle("dark-theme");
+const btn = document.querySelector('.btn-toggle');
+
+btn.addEventListener('click', function () {
+  document.body.classList.toggle('dark-theme');
 });
+
+$('.card-text-wrapper').click(function () {
+  clickToExapndCards($(this));
+});
+
+function clickToExapndCards($obj) {
+  let clickedElement = $obj;
+  if (clickedElement.hasClass('expanded')) {
+    clickedElement.find('.card-text').hide('slow');
+    clickedElement.removeClass('expanded');
+  } else {
+    clickedElement.find('.card-text').show('slow');
+    clickedElement.addClass('expanded');
+  }
+}
