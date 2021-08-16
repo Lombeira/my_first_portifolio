@@ -34,6 +34,7 @@ img {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   --body-color-secondary: white;
+  --shadows: rgba(0, 0, 0, 0.2);
 
   /* Fonts */
   --title-font-size: 1.875rem;
@@ -76,6 +77,7 @@ body.dark-theme {
   --text-color-light: hsl(var(--hue) 0% 98%);
   --body-color: hsl(var(--hue), 18%, 15%);
   --body-color-secondary: hsl(var(--hue), 10%, 12%);
+  --shadows: rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -162,7 +164,7 @@ body.dark-theme {
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 10px var(--shadows);
 }
 
 main {
@@ -376,7 +378,7 @@ nav.show div.icon-menu4 {
 
 .card {
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px var(--shadows);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
@@ -514,7 +516,7 @@ nav.show div.icon-menu4 {
 
 #testimonials blockquote {
   padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px var(--shadows);
   border-radius: 0.25rem;
 }
 
@@ -717,7 +719,6 @@ footer a:nth-child(3) i:hover {
 
   nav i {
     cursor: pointer;
-
   }
 
   nav > i {
