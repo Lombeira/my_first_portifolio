@@ -113,18 +113,3 @@ const btn = document.querySelector('.btn-toggle');
 btn.addEventListener('click', function () {
   document.body.classList.toggle('dark-theme');
 });
-
-$('.card-text-wrapper').click(function () {
-  clickToExapndCards($(this));
-});
-
-function clickToExapndCards($obj) {
-  let clickedElement = $obj;
-  if (clickedElement.hasClass('expanded')) {
-    clickedElement.find('.card-text').hide('slow');
-    clickedElement.removeClass('expanded');
-  } else {
-    clickedElement.find('.card-text').show('slow');
-    clickedElement.addClass('expanded');
-  }
-}
