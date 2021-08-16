@@ -8,10 +8,18 @@
 
     <!-- Scripts -->
 
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="main.js"></script>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- SWIPPER -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,16 +27,21 @@
       rel="stylesheet"
     />
 
-    <!-- Icones     -->
+    <!-- ICONS     -->
 
     <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header id="header" class="scroll">
       <nav class="container">
-        <a class="logo" href="#">Lomb<span>eira</span>. <i class="icon-brightness-contrast"></i></a>
-        
+        <a class="logo" href="#"
+          >Lomb<span>eira</span>. <i class="icon-brightness-contrast"></i
+        ></a>
+
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
@@ -54,7 +67,7 @@
             <img width="200px" src="img/lombeira.png" alt="" />
           </div>
           <div class="text">
-            <h2 class="title"></h2>
+            <h2 class="title">Who am i?!</h2>
             <p>
               Carinhosamente apelidado por "Faz-tudo da TI", sempre fui um
               entusiasta da tecnologia, e tendo como combustível o sucesso de
@@ -198,60 +211,97 @@
       <div class="divider-1"></div>
 
       <!-- Testimonials -->
-      <section class="section" id="testimonial">
-        <div class="container grid">
+      <section class="section" id="testimonials">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam odit deserunt aspernatur autem accusamus tempora ab
-                  necessitatibus consequatur soluta et. Consectetur dolores quia
-                  voluptatibus nemo quod ipsum sint ullam in?
-                </p>
-                <cite>
-                  <img src="" alt="" />
-                  Samuel Santos
-                </cite>
-              </blockquote>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lombeira abriu meus olhos para as possibilidades infinitas
+                    do CSS, o cara é um monstro.
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/testimonials/samuelsantos.png"
+                      alt="Foto de Samuel Santos"
+                    />
+                    Samuel Santos
+                  </cite>
+                </blockquote>
+              </div>
 
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam odit deserunt aspernatur autem accusamus tempora ab
-                  necessitatibus consequatur soluta et. Consectetur dolores quia
-                  voluptatibus nemo quod ipsum sint ullam in?
-                </p>
-                <cite>
-                  <img src="" alt="" />
-                  Gabriel Sampaio
-                </cite>
-              </blockquote>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Eu tinha desanimado de programar até conhecer Lombeira, o
+                    cara cria lógica até onde não tem!
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/testimonials/gabiru.png"
+                      alt="Foto de Gabriel Sampaio"
+                    />
+                    Gabriel Sampaio
+                  </cite>
+                </blockquote>
+              </div>
 
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam odit deserunt aspernatur autem accusamus tempora ab
-                  necessitatibus consequatur soluta et. Consectetur dolores quia
-                  voluptatibus nemo quod ipsum sint ullam in?
-                </p>
-                <cite>
-                  <img src="" alt="" />
-                  Matheus Silveira
-                </cite>
-              </blockquote>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Além de excelente programador, o cara é um grande mestre
+                    Pokémon!
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/testimonials/matheussilveira.png"
+                      alt="Foto de Matheus Silveira"
+                    />
+                    Matheus Silveira
+                  </cite>
+                </blockquote>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <!-- CONTACT -->
+
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato comigo!</h2>
+            <p>
+              Entre em contato comigo, quero tirar suas dúvidas, ouvir suas
+              críticas e sugestões.
+            </p>
+            <a
+              target="_blank"
+              class="button"
+              href="https://api.whatsapp.com/send?phone=+5521999783845&text=Olá, vim através do seu portifólio Web!"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 21 9 9978-3845</li>
+              <li><i class="icon-location"></i> Teresópolis - RJ</li>
+              <li><i class="icon-mail2"></i> glomenha@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>

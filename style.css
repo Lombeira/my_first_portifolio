@@ -18,7 +18,7 @@ img {
   height: auto;
 }
 
-/* :root {
+:root {
   --header-height: 4.5rem;
   --hue: 159;
   --base-color: hsl(var(--hue) 36% 57%);
@@ -29,20 +29,20 @@ img {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   --body-color-secondary: white;
-} */
+}
 
-:root {
+/* :root {
   --header-height: 4.5rem;
   --hue: 224;
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 36% 56%);
+  --base-color-second: hsl(var(--hue) 36% 36%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 90%);
-  --text-color: hsl(var(--hue) 0% 46%);
+  --text-color: hsl(var(--hue) 0% 76%);
   --text-color-light: hsl(var(--hue) 0% 98%);
   --body-color: hsl(var(--hue), 18%, 15%);
   --body-color-secondary: hsl(var(--hue), 10%, 12%);
-}
+} */
 
 /*================== BASE ==================*/
 
@@ -353,6 +353,7 @@ nav.show div.icon-menu4 {
 }
 
 .card:nth-child(1):hover {
+  background-color: rgba(207, 167, 56, 0.2);
   border-bottom: 0.25rem solid #e34f26;
   transition: 0.3s;
 }
@@ -363,12 +364,13 @@ nav.show div.icon-menu4 {
 }
 
 .card:nth-child(2):hover {
-  border-bottom: 0.25rem solid #1572b6;
+  background-color: rgba(117, 150, 187, 0.2);
+  border-bottom: 0.25rem solid #77b1db;
   transition: 0.3s;
 }
 
 .card:nth-child(2):hover i {
-  color: #1572b6;
+  color: #77b1db;
   transition: 0.3s;
 }
 
@@ -380,14 +382,21 @@ nav.show div.icon-menu4 {
   border-image: linear-gradient(to right, #f7df1e, #007acc);
   border-image-slice: 1;
   transition: 0.3s;
+  background-image: linear-gradient(
+    to right,
+    rgba(195, 166, 0, 0.15),
+    rgba(62, 45, 212, 0.15)
+  );
 }
 
 .card:nth-child(3):hover i {
   color: #f7df1e;
+  transition: 0.3s;
 }
 
 .card:nth-child(3):hover i + i {
   color: #007acc;
+  transition: 0.3s;
 }
 
 .card:nth-child(4) .card-hover {
@@ -398,9 +407,15 @@ nav.show div.icon-menu4 {
   border-image: linear-gradient(to right, #61dafb, #764abc);
   border-image-slice: 1;
   transition: 0.3s;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 156, 195, 0.15),
+    rgba(123, 45, 212, 0.15)
+  );
 }
 
 .card:nth-child(4):hover i {
+  transition: 0.3s;
   color: #61dafb;
 }
 
@@ -423,4 +438,101 @@ nav.show div.icon-menu4 {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75;
+}
+
+/*================== TESTIMONIALS ==================*/
+
+#testimonials {
+  background: var(--body-color-secondary);
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* Swiper */
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*================== CONTACT ==================*/
+
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
 }
