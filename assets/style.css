@@ -2041,7 +2041,6 @@
 }
 .icon-mongodb:before {
   content: "\ecf5";
-  color: #47a248;
 }
 .icon-monkeytie:before {
   content: "\ecf6";
@@ -2081,7 +2080,6 @@
 }
 .icon-mysql:before {
   content: "\ed00";
-  color: #4479a1;
 }
 .icon-nativescript:before {
   content: "\ed01";

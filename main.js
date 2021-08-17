@@ -114,15 +114,15 @@ btn.addEventListener('click', function () {
   document.body.classList.toggle('dark-theme');
 });
 
-const cards = document.querySelectorAll('.cards');
-const text = document.querySelector('.focus-content');
+const card = document.querySelectorAll('.card');
+const text = document.querySelectorAll('.focus-content');
 
-cards.firstChild.forEach((card) => {
+card.forEach((card, index) => {
   card.addEventListener('click', () => {
-    if (text.classList.contains('hide-text')) {
-      text.classList.remove('hide-text');
+    if (text[index].classList.contains('show-text')) {
+      text[index].classList.remove('show-text');
     } else {
-      text.classList.add('hide-text');
+      text[index].classList.add('show-text');
     }
   });
 });
