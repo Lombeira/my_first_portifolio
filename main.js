@@ -113,3 +113,16 @@ const btn = document.querySelector('.btn-toggle');
 btn.addEventListener('click', function () {
   document.body.classList.toggle('dark-theme');
 });
+
+const cards = document.querySelectorAll('.cards');
+const text = document.querySelector('.focus-content');
+
+cards.firstChild.forEach((card) => {
+  card.addEventListener('click', () => {
+    if (text.classList.contains('hide-text')) {
+      text.classList.remove('hide-text');
+    } else {
+      text.classList.add('hide-text');
+    }
+  });
+});
