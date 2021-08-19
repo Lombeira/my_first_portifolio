@@ -1,5 +1,6 @@
-# mobilefirstwebsite
+# lombeira.github.io 🚀
 
-This is a website created with HTML, CSS and JavaScript using the mobile first concepts.
+### Esse repositório contem meu portifólio
 
-14 p 3
+##### Receberá novas atualizações sempre que apreendermos coisas novas na Trybe
+

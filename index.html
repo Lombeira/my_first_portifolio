@@ -1,383 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Lombeira</title>
-
-    <!-- Scripts -->
-
-    <script defer src="https://unpkg.com/scrollreveal"></script>
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script defer src="main.js"></script>
-
-    <!-- SWIPPER -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- ICONS     -->
-
-    <link rel="stylesheet" href="assets/style.css" />
-
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-
-  <body class="">
-    <header id="header" class="scroll">
-      <nav class="container">
-        <a class="logo" href="#">Lomb<span>eira</span>. </a>
-
-        <!-- menu -->
-        <div class="menu">
-          <ul class="grid">
-            <i class="icon-brightness-contrast btn-toggle"></i>
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">ToolBox</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
-        </div>
-        <!-- menu -->
-        <i class="icon-brightness-contrast"></i>
-        <div class="toggle icon-menu3"></div>
-        <div class="toggle icon-menu4"></div>
-      </nav>
-    </header>
-
-    <!-- HOME -->
-
-    <main>
-      <div id="top"></div>
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img src="img/lombeira.png" alt="" />
-          </div>
-          <div class="text">
-            <h2 class="title">Quem?!</h2>
-            <p>
-              Carinhosamente apelidado por "Faz-tudo da TI", sempre fui um
-              entusiasta da tecnologia, e tendo como combustível o sucesso de
-              empreendimentos passados, estou entrando de cabeça na área de
-              desenvolvimento web, me dedicando full-time ao estudo e
-              crescimento profissional na área. Sempre aberto para trocar
-              experiências e ideias, ou simplesmente tomar um café! :)
-            </p>
-            <a class="button" href="#contact">Entre em contato</a>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-
-      <!-- ABOUT -->
-
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="video/background.mp4" type="video/mp4" />
+    </video>
+    <div id="axis">
+      <h2 class="move-right">Glauco</h2>
+      <h2 class="nickname">[Lombeira]</h2>
+      <h2 class="move-left">Lomenha</h2>
+    </div>
+    <div class="switch">
+      <div class="hover-proj float_left w3-center w3-animate-left">
+        <img
+          class="avatar"
+          src="/img/2.2.png"
+          alt="Foto do Lombeira sorrindo"
+        />
+      </div>
+      <div class="projects-hover w3-container w3-center w3-animate-right">
+        <div class="project-item">
+          <a
+            href="https://lombeira.github.io/netflix_based_project/"
+            target="_blank"
+          >
             <img
-              class="zoom"
-              src="https://images.unsplash.com/photo-1566837945700-30057527ade0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              alt=""
+              class="avatar"
+              src="/img/gamflix.png"
+              alt="Foto do projeto gameflix"
             />
-          </div>
-          <div class="text">
-            <h2 class="title">Sobre</h2>
-            <p class="text-move">
-              Empreendedor, cyber atleta, entusiasta da tecnologia e apaixonado
-              por computadores, aprendeu cedo a primeira de suas grandes lições,
-              que o caminho mais curto entre dois pontos é a execução.
-            </p>
-            <br />
-            <p class="text-move">
-              Situado atualmente em Teresópolis, é o protagonista de várias
-              empresas prósperas locais, trazendo serviços de qualidade para
-              seus moradores, que incluem varejo, hotelaria, televisão,
-              instituições técnicas licenciadas e organizações sociais.
-            </p>
-            <br />
-            <p class="text-move">
-              Essas experiências acabaram por moldá-lo em um empreendedor jovem,
-              versátil e experiente.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-2"></div>
-
-      <!-- SERVICES -->
-
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">ToolBox</h2>
-            <p class="subtitle">Caixa de ferramentas</p>
-          </header>
-          <div class="cards grid">
-            <div class="card">
-              <i class="icon-html5"></i>
-              <h3 class="title">HTML 5</h3>
-              <div class="focus-content">
-                <p>
-                  Em particular, <strong>HTML5</strong> adiciona várias novas
-                  funções sintáticas, assim como a integração de conteúdos SVG
-                  que substituem o uso de tags object genéricas. Outros novos
-                  elementos, como <em>section</em>, <em>article</em>,
-                  <em>header</em> e <em>nav</em>, são projetados para enriquecer
-                  o conteúdo semântico dos documentos.
-                  <strong>HTML5</strong> também define com algum detalhe o
-                  processamento necessário para que erros de sintaxe de
-                  documentos inválidos sejam tratados uniformemente por todos os
-                  browsers e outros agentes de usuários em conformidade com o
-                  <strong>HTML5</strong>.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="icon-javascript"></i>
-              <i class="icon-typescript"></i>
-              <h3 class="title">JavaScript e TypeScript</h3>
-              <div class="focus-content">
-                <p>
-                  <strong>JavaScript®</strong> é uma linguagem leve,
-                  interpretada e baseada em objetos com funções de primeira
-                  classe, mas usada também em vários outros ambientes sem
-                  browser. O <strong>JavaScript</strong> é uma linguagem baseada
-                  em protótipos, multi-paradigma e dinâmica, suportando estilos
-                  de orientação a objetos, imperativos e declarativos. Já o
-                  <strong>TypeScript</strong> é um superconjunto sintático
-                  estrito de <strong>JavaScript</strong> que adiciona tipagem
-                  estática opcional à linguagem. Tipos fornecem uma maneira de
-                  descrever a forma de um objeto, fornecendo melhor documentação
-                  e permitindo que o <strong>TypeScript</strong>
-                  valide se seu código está funcionando corretamente.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="icon-css31"></i>
-              <h3 class="title">CSS 3</h3>
-              <div class="focus-content">
-                <p>
-                  <strong>CSS3</strong> é a terceira mais nova versão das
-                  famosas <em> Cascading Style Sheets </em> (ou simplesmente
-                  <strong>CSS</strong> ), pela qual se define estilos para um
-                  projeto web (página de internet). Com efeitos de transição,
-                  imagem, imagem de fundo/background e outros, pode-se criar
-                  estilos únicos para seus projetos web, alterando diversos
-                  aspectos de design no layout da página. O
-                  <strong>CSS3</strong> é extremamente capaz de construir
-                  animações que impressionam o mais avançado desenvolvedor web,
-                  tanto em 2 como em 3 dimensões. Os mais comuns são os efeitos
-                  de rotação, movimento e transição.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="icon-react"></i>
-              <i class="icon-redux"></i>
-              <h3 class="title">React e Redux</h3>
-              <div class="focus-content">
-                <p>
-                  <strong>React JS</strong> é uma biblioteca
-                  <strong>JavaScript</strong> para a criação de interfaces de
-                  usuário — ou <em>UI</em> ( <em>user interface</em> ). Criado
-                  em 2011 pelo time do <strong>Facebook</strong>, surgiu com o
-                  objetivo de otimizar a atualização e a sincronização de
-                  atividades simultâneas no feed de notícias da rede social,
-                  entre eles chat, status, listagem de contatos e outros.
-                  <strong>Redux</strong> é uma biblioteca para armazenamento de
-                  estados de aplicações <strong>JavaScript</strong>, criado por
-                  <em>Dan Abramov</em>. Ele nasceu através de uma implementação
-                  do <strong>Flux</strong>.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="icon-git1"></i>
-              <i class="icon-github1"></i>
-              <h3 class="title">Git e Github</h3>
-              <div class="focus-content">
-                <p>
-                  <strong>Git</strong> é um sistema de controle de versões
-                  distribuído, usado principalmente no desenvolvimento de
-                  software, mas pode ser usado para registrar o histórico de
-                  edições de qualquer tipo de arquivo é uma biblioteca. Cada
-                  diretório de trabalho do <strong>Git</strong> é um repositório
-                  com um histórico completo e habilidade total de acompanhamento
-                  das revisões.<strong>GitHub</strong> é uma plataforma de
-                  <em>hospedagem</em> de código-fonte e arquivos com
-                  <em>controle de versão</em> usando o <strong>Git</strong>. Ele
-                  permite que <em>programadores</em>, <em>utilitários</em> ou
-                  qualquer <em>usuário</em> cadastrado na plataforma contribuam
-                  em projetos privados e/ou Open Source de qualquer lugar do
-                  mundo.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="icon-mongodb"></i>
-              <i class="icon-mysql"></i>
-              <h3 class="title">MongoDB e MySQL</h3>
-              <div class="focus-content">
-                <p>
-                  <strong>MongoDB</strong> é um software de
-                  <em>banco de dados</em> orientado a documentos livre, de
-                  código aberto e multiplataforma, escrito na linguagem
-                  <strong>C++</strong>. Classificado como um programa de banco
-                  de dados <strong>NoSQL</strong>, o
-                  <strong>MongoDB</strong> usa documentos semelhantes a
-                  <strong><em>JSON</em></strong> com esquemas.O
-                  <strong>MySQL</strong> é um sistema de gerenciamento de
-                  <em>banco de dados</em>, que utiliza a linguagem
-                  <strong>SQL</strong> como interface. É atualmente um dos
-                  sistemas de gerenciamento de bancos de dados mais populares da
-                  <em>Oracle Corporation</em>, com mais de 10 milhões de
-                  instalações pelo mundo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-
-      <!-- Testimonials -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-          </header>
-          <div class="testimonials swiper-container">
-            <div class="swiper-wrapper">
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Lombeira abriu meus olhos para as possibilidades infinitas
-                    do CSS, o cara é um monstro.
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/testimonials/samuelsantos.png"
-                      alt="Foto de Samuel Santos"
-                    />
-                    Samuel Santos
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Eu tinha desanimado de programar até conhecer Lombeira, o
-                    cara cria lógica até onde não tem!
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/testimonials/gabiru.png"
-                      alt="Foto de Gabriel Sampaio"
-                    />
-                    Gabriel Sampaio
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Além de excelente programador, o cara é um grande mestre
-                    Pokémon!
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/testimonials/matheussilveira.png"
-                      alt="Foto de Matheus Silveira"
-                    />
-                    Matheus Silveira
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-2"></div>
-
-      <!-- CONTACT -->
-
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Entre em contato comigo!</h2>
-            <p>
-              Entre em contato comigo, quero tirar suas dúvidas, ouvir suas
-              críticas e sugestões.
-            </p>
-            <a
-              target="_blank"
-              class="button"
-              href="https://api.whatsapp.com/send?phone=+5521999783845&text=Olá, vim através do seu portifólio Web!"
-              ><i class="icon-whatsapp"></i>Manda um zap</a
-            >
-          </div>
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> 21 9 9978-3845</li>
-              <li><i class="icon-location"></i> Teresópolis - RJ</li>
-              <li><i class="icon-mail2"></i> glomenha@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-    </main>
-    <footer class="section">
-      <div class="container grid">
-        <div class="brand">
-          <a class="logo logo-alt" href="#home">Lomb<span>eira</span>. </a>
-          <p>©2021 Criado por mim!</p>
-          <p>Todos os direitos reservados.</p>
-        </div>
-        <div class="social">
-          <a target="_blank" href="https://www.facebook.com/Lomenha">
-            <i class="icon-facebook1"></i>
           </a>
-          <a target="_blank" href="https://www.linkedin.com/in/glaucolomenha/">
-            <i class="icon-linkedin1"></i>
+        </div>
+        <div class="project-item">
+          <a href="https://lombeira.github.io/desafioinsta/" target="_blank">
+            <img
+              class="avatar"
+              src="/img/desafioinsta.png"
+              alt="Foto do projeto desafio insta"
+            />
           </a>
-          <a target="_blank" href="https://github.com/Lombeira">
-            <i class="icon-github"></i>
+        </div>
+        <div class="project-item">
+          <a href="https://feeeeeda.github.io/" target="_blank">
+            <p class="const">Em Construção</p>
+            <img
+              class="avatar"
+              src="/img/logan.jpg"
+              alt="Foto do portifolio da feda"
+            />
           </a>
         </div>
       </div>
+    </div>
+    <p class="descricao">
+      Carinhosamente apelidado por <em>"Faz-tudo da TI"</em>, sempre fui um
+      entusiasta da <strong>tecnologia</strong>, e tendo como combustível o
+      sucesso de empreendimentos passados, estou entrando de cabeça na área de
+      <strong>desenvolvimento web</strong>, me dedicando
+      <strong>full-time ao estudo e crescimento profissional na área</strong>.
+      Sempre aberto para trocar experiências e ideias, ou simplesmente tomar um
+      <em>café! :)</em>
+    </p>
+    <div class="skills">
+      <div class="skills-sub">
+        <h3>Caixa de Ferramentas</h3>
+        <ul>
+          <li>HTML 5</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Git</li>
+          <li>CSS 3</li>
+          <ul>
+            <li>Sass</li>
+            <li class="sub_item">BOOTSTRAP</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="skills-sub">
+        <h3>Software</h3>
+        <ul>
+          <li>Photoshop</li>
+          <li>After Effects</li>
+          <li>Premiere</li>
+          <li>Cubase</li>
+          <li>Reaper</li>
+        </ul>
+      </div>
+      <div class="skills-sub">
+        <h3>Softskills</h3>
+        <ul>
+          <li>Liderança</li>
+          <li>Comunicação assertiva</li>
+          <li>Motivação</li>
+          <li>Positividade</li>
+          <li>Autodidatismo</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.linkedin.com/in/glaucolomenha/" target="_blank">
+        <img class="minilogo" src="img/linkedin.png" alt="Logo do Linkedin" />
+      </a>
+      <a href="https://github.com/Lombeira" target="_blank">
+        <img class="minilogogit" src="img/github.png" alt="Logo do GitHub" />
+      </a>
+      <a href="https://github.com/Lombeira" target="_blank">
+        <img class="minilogo" src="img/insta.jpg.png" alt="Logo do GitHub" />
+      </a>
     </footer>
-    <a href="#top" class="back-to-top"><i class="icon-circle-up"></i></a>
   </body>
 </html>
